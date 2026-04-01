@@ -22,6 +22,7 @@ a:hover { color: #555; }
   max-width: 700px;
   margin: 0 auto;
   padding: 0 24px;
+  overflow: hidden;
 }
 
 /* Header */
@@ -166,9 +167,11 @@ h1.page-title {
 .post-content pre code { background: none; padding: 0; }
 .post-content img {
   max-width: 100%;
+  width: 100%;
   height: auto;
   display: block;
   margin: 0 0 28px;
+  border-radius: 4px;
 }
 
 .post-content blockquote {
