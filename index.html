@@ -1,0 +1,28 @@
+---
+layout: default
+title: Home
+---
+
+<div class="home-intro">
+  <p>I'm <strong>Stanislav Kozlov</strong>, a Unity Technical UI/UX Developer.<br>
+  I build scalable game interfaces, open-source tools, and write about UI architecture, performance, and clean code.</p>
+</div>
+
+<h1 class="page-title">Recent Notes</h1>
+
+<ul class="post-list">
+  {% for post in site.posts limit:5 %}
+  <li class="post-item">
+    <div class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</div>
+    <h2 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    {% if post.excerpt %}
+    <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 200 }}</p>
+    {% endif %}
+    <a class="read-more" href="{{ post.url | relative_url }}">Read more &rarr;</a>
+  </li>
+  {% endfor %}
+</ul>
+
+{% if site.posts.size > 5 %}
+<p><a href="{{ '/notes.html' | relative_url }}">All notes &rarr;</a></p>
+{% endif %}

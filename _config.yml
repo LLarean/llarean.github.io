@@ -1,0 +1,43 @@
+title: Stanislav Kozlov
+description: Unity Technical UI/UX Developer — notes on game UI, tooling, and clean code.
+url: "https://llarean.github.io"
+baseurl: ""
+
+author:
+  name: Stanislav Kozlov
+  email: llarean@ya.ru
+  github: LLarean
+  linkedin: stanislav-kozlov-503b23347
+  telegram: llarean
+
+permalink: /notes/:year/:month/:day/:title/
+
+collections:
+  tools:
+    output: true
+    permalink: /tools/:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "tools"
+    values:
+      layout: "tool"
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+markdown: kramdown
+highlighter: rouge
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md

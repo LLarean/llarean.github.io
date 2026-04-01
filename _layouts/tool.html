@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<article>
+  <header class="post-header">
+    <h1>{{ page.title }}</h1>
+    {% if page.language %}<div class="tool-lang">{{ page.language }}</div>{% endif %}
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+  </div>
+
+  {% if page.repo %}
+  <p><a href="{{ page.repo }}">View on GitHub &rarr;</a></p>
+  {% endif %}
+</article>

@@ -1,0 +1,18 @@
+---
+layout: default
+title: Tools
+---
+
+<h1 class="page-title">Tools</h1>
+
+<ul class="tools-list">
+  {% assign sorted_tools = site.tools | sort: 'stars' | reverse %}
+  {% for tool in sorted_tools %}
+  <li class="tool-card">
+    {% if tool.language %}<div class="tool-lang">{{ tool.language }}</div>{% endif %}
+    <h2 class="tool-name"><a href="{{ tool.url | relative_url }}">{{ tool.title }}</a></h2>
+    {% if tool.description %}<p class="tool-desc">{{ tool.description }}</p>{% endif %}
+    {% if tool.repo %}<a class="tool-link" href="{{ tool.repo }}">GitHub &rarr;</a>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
