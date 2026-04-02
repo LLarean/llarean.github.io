@@ -6,22 +6,17 @@ permalink: /about/
 
 # Stanislav Kozlov
 
-Unity Technical UI/UX Developer with a focus on scalable game interfaces, tooling, and clean code.
+Game developer with 9 years of experience. I specialize in UI/UX and technical interface architecture — building systems that are both performant and maintainable, grounded in MVP/MVC patterns and SOLID principles.
 
-I work at the intersection of engineering and design — building UI systems that are both performant and maintainable. My approach is grounded in MVP/MVC architecture, SOLID principles, and a genuine interest in player experience.
+*"UI is the party. Code is the bouncer. Nobody notices him until something breaks."*
 
-## What I do
+On GitHub I call myself a "UX Philosopher" — half joking, but it captures something real. More often than not I've been the one analyzing and consulting: why does this interface feel wrong, how does the player's eye move across a screen, what does neurophysiology tell us about attention and feedback. Old games are a recurring obsession — they solved hard UX problems under brutal constraints, and there's always something worth learning there.
 
-- **UI Architecture** — scalable UGUI solutions using MVP/MVC patterns, custom editor tools
-- **Performance** — rendering optimization, draw call batching, texture compression
-- **UX Design** — player experience analysis, wireframing, localization and accessibility systems
-- **Open-source tooling** — packages for Unity developers, published on GitHub
+I make open-source tools for Unity developers because good help should travel further than the next conversation.
 
-## Currently
+## On this blog
 
-- Working on new utilities for game development
-- Studying design patterns for UI systems and [Elegant Objects](https://www.elegantobjects.org/) principles
-- Writing a UI/UX analysis of *Might and Magic VIII*
+Notes on game UI/UX, monetization, and game design — connected by a single thread: how humans perceive and respond to what's in front of them. Cognitive and physiological psychology of perception is the lens; game interfaces are the main subject.
 
 ## Contact
 
