@@ -1,5 +1,5 @@
 ---
-title: llarean Windows Terminal Theme
+title: Windows Terminal Theme
 description: Custom color scheme for Windows Terminal.
 language: JSON
 repo: https://github.com/LLarean/llarean-windows-terminal-theme

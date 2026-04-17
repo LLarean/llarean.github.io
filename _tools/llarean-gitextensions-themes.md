@@ -1,5 +1,5 @@
 ---
-title: llarean GitExtensions Themes
+title: GitExtensions Themes
 description: Custom dark and light themes for GitExtensions, refined for Windows 11.
 language: CSS
 repo: https://github.com/LLarean/llarean-gitextensions-themes
