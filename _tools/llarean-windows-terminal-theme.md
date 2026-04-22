@@ -5,6 +5,7 @@ language: JSON
 repo: https://github.com/LLarean/llarean-windows-terminal-theme
 image: /assets/images/llarean-windows-terminal-theme.png
 stars: 0
+category: Other
 ---
 
 ![llarean Windows Terminal Theme]({{ '/assets/images/llarean-windows-terminal-theme.png' | relative_url }})

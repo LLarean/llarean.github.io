@@ -5,6 +5,7 @@ language: CSS
 repo: https://github.com/LLarean/llarean-gitextensions-themes
 image: /assets/images/llarean-gitextensions-themes.png
 stars: 0
+category: Other
 ---
 
 ![llarean GitExtensions Themes]({{ '/assets/images/llarean-gitextensions-themes.png' | relative_url }})

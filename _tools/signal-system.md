@@ -4,6 +4,7 @@ description: Lightweight EventBus for Unity and .NET — type-safe signal dispat
 language: C# / Unity / .NET
 repo: https://github.com/LLarean/signal-system
 stars: 0
+category: C# / .NET
 ---
 
 Decoupling game systems is straightforward in theory and tedious in practice. **SignalSystem** is an EventBus implementation originally created at Owlcat Games, adapted for open use in Unity and plain .NET projects.

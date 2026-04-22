@@ -4,6 +4,7 @@ description: Zero-dependency save system for Unity — typed read/write over Pla
 language: C# / Unity
 repo: https://github.com/LLarean/unity-playerprefs-database
 stars: 0
+category: Unity packages
 ---
 
 A minimal save system for small-to-medium Unity games that don't need a full database but want more structure than raw PlayerPrefs key strings.

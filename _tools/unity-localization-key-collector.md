@@ -4,6 +4,7 @@ description: Unity editor utility that scans prefabs, scenes, and code to collec
 language: C# / Unity
 repo: https://github.com/LLarean/unity-localization-key-collector
 stars: 0
+category: Unity packages
 ---
 
 Keeping localization key lists in sync with a growing project is tedious: keys appear in components on prefabs, get referenced in scenes, and get called from code — all in different places. **Localization Key Collector** scans all three sources in one pass and exports the results to CSV files ready for a translator or a localization spreadsheet.

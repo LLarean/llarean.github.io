@@ -5,6 +5,7 @@ language: C# / Unity
 repo: https://github.com/LLarean/img2etc2
 image: /assets/images/img2etc2.png
 stars: 9
+category: Unity packages
 ---
 
 ETC2 compression requires textures with dimensions divisible by 4. In practice this means artists constantly produce sprites that fail compression checks, causing visual artifacts or forcing manual resizing before each build.

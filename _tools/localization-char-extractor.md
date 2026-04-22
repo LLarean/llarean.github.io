@@ -4,6 +4,7 @@ description: Browser-based utility for extracting unique characters from localiz
 language: Blazor / HTML
 repo: https://github.com/LLarean/localization-char-extractor
 stars: 0
+category: Localization tools
 ---
 
 Building a custom font atlas requires knowing exactly which characters your localization files actually use. **Localization Char Extractor** runs in the browser — drop in a localization JSON and get a clean character set, ready to feed into any font pipeline.

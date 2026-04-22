@@ -4,6 +4,7 @@ description: Google Apps Script utilities for managing game localization in Goog
 language: Google Apps Script
 repo: https://github.com/LLarean/localization-sheets-tools
 stars: 0
+category: Localization tools
 ---
 
 Managing game translations in a spreadsheet gets unwieldy fast — scattered sheets, missing keys, no easy way to sync with Unity. **Localization Sheets Tools** adds a **Localization Tools** menu directly into Google Sheets with everything needed to keep a JSON-based localization pipeline running smoothly.

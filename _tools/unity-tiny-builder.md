@@ -4,6 +4,7 @@ description: One-click Android build automation for Unity — semantic versionin
 language: C# / Unity
 repo: https://github.com/LLarean/unity-tiny-builder
 stars: 0
+category: Unity packages
 ---
 
 Setting up Unity's build pipeline for Android involves clicking through the same settings on every project: keystore configuration, build target, output path, version bump. **TinyBuilder** wraps this into a scriptable, repeatable editor tool.

@@ -4,6 +4,7 @@ description: Production-ready Unity logging system with automatic caller context
 language: C# / Unity
 repo: https://github.com/LLarean/unity-smart-logger
 stars: 0
+category: Unity packages
 ---
 
 Unity's built-in `Debug.Log` tells you what was logged but not always who logged it, especially across large codebases. **SmartLogger** wraps Unity's logging system to include automatic caller information — class name, method, line number — without requiring manual string formatting.

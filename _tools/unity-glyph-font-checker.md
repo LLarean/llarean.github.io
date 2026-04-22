@@ -4,6 +4,7 @@ description: Unity editor utility that checks character coverage in TMP and Unit
 language: C# / Unity
 repo: https://github.com/LLarean/unity-glyph-font-checker
 stars: 0
+category: Unity packages
 ---
 
 Localized text that looks fine in the editor can silently break at runtime when a font is missing glyphs for a particular language. **Glyph Font Checker** surfaces these problems before they ship: drag in a font, provide the text to check, and get a full breakdown of what renders and what doesn't.
