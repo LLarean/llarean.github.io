@@ -3,6 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    (function () {
+      var theme;
+      try { theme = localStorage.getItem('theme'); } catch (error) {}
+      if (theme !== 'light' && theme !== 'dark') {
+        theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      }
+      document.documentElement.setAttribute('data-theme', theme);
+    }());
+  </script>
   <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <link rel="icon" type="image/x-icon" href="{{ '/favicon.ico' | relative_url }}">
@@ -20,6 +30,7 @@
       <a href="{{ '/notes/' | relative_url }}"{% if page.url contains '/notes' or page.layout == 'post' %} class="active"{% endif %}>Notes</a>
       <a href="{{ '/tools/' | relative_url }}"{% if page.url contains '/tools' %} class="active"{% endif %}>Tools</a>
       <a href="{{ '/about/' | relative_url }}"{% if page.url contains '/about' %} class="active"{% endif %}>About</a>
+      <button class="theme-toggle" type="button">Dark</button>
     </nav>
   </div>
 </header>
@@ -41,6 +52,47 @@
     </span>
   </div>
 </footer>
+
+<script>
+  (function () {
+    var root = document.documentElement;
+    var button = document.querySelector('.theme-toggle');
+    var systemTheme = window.matchMedia('(prefers-color-scheme: dark)');
+
+    function getStoredTheme() {
+      try {
+        var theme = localStorage.getItem('theme');
+        return theme === 'light' || theme === 'dark' ? theme : null;
+      } catch (error) {
+        return null;
+      }
+    }
+
+    function updateButton() {
+      var nextTheme = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      var label = 'Switch to ' + nextTheme + ' theme';
+      button.textContent = nextTheme;
+      button.setAttribute('aria-label', label);
+      button.setAttribute('title', label);
+    }
+
+    button.addEventListener('click', function () {
+      var theme = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', theme);
+      try { localStorage.setItem('theme', theme); } catch (error) {}
+      updateButton();
+    });
+
+    systemTheme.addEventListener('change', function (event) {
+      if (!getStoredTheme()) {
+        root.setAttribute('data-theme', event.matches ? 'dark' : 'light');
+        updateButton();
+      }
+    });
+
+    updateButton();
+  }());
+</script>
 
 </body>
 </html>
