@@ -16,6 +16,9 @@ collections:
   tools:
     output: true
     permalink: /tools/:name/
+  games:
+    output: true
+    permalink: /games/:name/
 
 defaults:
   - scope:
@@ -26,6 +29,11 @@ defaults:
   - scope:
       path: ""
       type: "tools"
+    values:
+      layout: "tool"
+  - scope:
+      path: ""
+      type: "games"
     values:
       layout: "tool"
   - scope:

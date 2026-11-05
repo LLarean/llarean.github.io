@@ -1,0 +1,22 @@
+---
+layout: default
+title: Games
+permalink: /games/
+---
+
+<h1 class="page-title">Games</h1>
+
+{% assign games = site.games | sort: 'stars' | reverse %}
+<ul class="tools-list">
+  {% for game in games %}
+  <li class="tool-card">
+    {% if game.language %}<div class="tool-lang">{{ game.language }}</div>{% endif %}
+    <h3 class="tool-name"><a href="{{ game.url | relative_url }}">{{ game.title }}</a></h3>
+    {% if game.image %}
+    <a href="{{ game.url | relative_url }}"><img class="post-thumb" src="{{ game.image | relative_url }}" alt="{{ game.title }}"></a>
+    {% endif %}
+    {% if game.description %}<p class="tool-desc">{{ game.description }}</p>{% endif %}
+    {% if game.repo %}<a class="tool-link" href="{{ game.repo }}">GitHub &rarr;</a>{% endif %}
+  </li>
+  {% endfor %}
+</ul>
